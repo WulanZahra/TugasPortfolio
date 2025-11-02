@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Althafina</title>
+  <style>
+    :root {
+      --pink: #f8b6c1;
+      --light-pink: #ffe4ec;
+      --white: #fff;
+      --gold: #d4af37;
+      --text: #4a4a4a;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background-color: var(--light-pink); color: var(--text); }
+
+    header {
+      background: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky; top: 0;
+    }
+    header h1 { color: var(--gold); font-size: 1.5rem; }
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: var(--pink); }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+    .hero img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 6px solid var(--pink);
+      margin: 20px;
+      object-fit: cover;
+    }
+    .hero-text {
+      max-width: 450px;
+      text-align: center;
+    }
+    .hero-text h2 { font-size: 2rem; color: var(--gold); }
+    .hero-text p { margin-top: 10px; font-size: 1rem; line-height: 1.5; }
+
+    section { padding: 50px 20px; max-width: 900px; margin: auto; }
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 25px;
+      color: var(--gold);
+      font-size: 1.8rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .skill {
+      background: var(--white);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .progress {
+      background: #eee;
+      border-radius: 20px;
+      height: 10px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+    .progress div {
+      height: 100%;
+      background: var(--pink);
+      width: var(--value);
+      border-radius: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--white);
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .hero-text h2 { font-size: 1.5rem; }
+      header { padding: 15px 20px; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wulan</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="asset/foto.jpeg" alt="Foto Diri">
+    <div class="hero-text">
+      <h2>Halo, Aku Wulan Zahra Annisa 👋</h2>
+      <p>Seorang UI/UX Designer dengan sentuhan desain elegan dan fungsionalitas tinggi. Aku senang menciptakan solusi digital yang indah dan efisien.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Tentang Saya</h2>
+    <p>Saya adalah seorang mahasiswi dari Institut Teknologi PLN dari prodi Informatika, saya saat ini sedang mempelajari DevOps untuk skill tambahan saya.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Keahlian</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>HTML & CSS</h3>
+        <div class="progress"><div style="--value: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="progress"><div style="--value: 80%;"></div></div>
+      </div>
+      <div class="skill">
+        <h3>UI/UX Design</h3>
+        <div class="progress"><div style="--value: 95%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Wulan | <a href="https://itpln.ac.id" target="_blank">ITPLN</a></p>
+  </footer>
+</body>
+</html>

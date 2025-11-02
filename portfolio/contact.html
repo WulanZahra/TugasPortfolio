@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Saya</title>
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #fff0f5; color: #333; margin: 0; }
+    header, footer {
+      background: white;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    nav a { margin: 0 10px; text-decoration: none; color: #444; font-weight: 500; }
+    nav a:hover { color: #f8b6c1; }
+
+    h2 { text-align: center; color: #d4af37; margin-top: 30px; }
+
+    form {
+      background: white;
+      padding: 25px;
+      max-width: 500px;
+      margin: 30px auto;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label { display: block; margin-top: 10px; font-weight: 500; }
+    input, select, textarea {
+      width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd;
+      border-radius: 10px; outline: none;
+    }
+    input[type="checkbox"] { width: auto; }
+    button {
+      background: #f8b6c1; color: white; border: none;
+      padding: 10px 20px; border-radius: 10px; margin-top: 15px; cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #f598aa; }
+
+    footer { margin-top: 30px; }
+    footer a { color: #d4af37; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+  </header>
+
+  <h2>Form Contact</h2>
+  <form>
+    <label>Nama</label>
+    <input type="text" placeholder="Masukkan nama Anda" required>
+
+    <label>Email</label>
+    <input type="email" placeholder="Masukkan email Anda" required>
+
+    <label>Jenis Layanan</label>
+    <select>
+      <option>Website Development</option>
+      <option>Mobile App</option>
+      <option>UI/UX Design</option>
+      <option>Konsultasi Teknologi</option>
+    </select>
+
+    <label>Deskripsi Proyek</label>
+    <textarea rows="4" placeholder="Ceritakan kebutuhan proyek Anda"></textarea>
+
+    <label><input type="checkbox"> Saya menyetujui syarat & ketentuan</label>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+  <footer>
+    <p>© 2025 Wulan | <a href="https://itpln.ac.id" target="_blank">ITPLN</a></p>
+  </footer>
+</body>
+</html>
